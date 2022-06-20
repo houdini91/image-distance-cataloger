@@ -9,6 +9,8 @@ geometry: margin=2cm
 Python CLI tool allows you to organize images by there geotagging.
 Tool supports a configurable distance radius to catalog groups by.
 
+Make sure your images include geotagging images by enabling feature in your respected phone/camera.
+
 # Setup
 ---
 
@@ -28,6 +30,9 @@ source venv/bin/activate
 ```
     pip install -r requirements.txt
 ```
+## Support
+* JPG
+* HEIC
 
 # Usage
 ---
@@ -45,4 +50,13 @@ optional arguments:
   -O OUTPUT, --output OUTPUT
                         output directory path
   -f, --force           force overwrite output directory
+```
+
+## IMPORTANT
+**Use `-f` with extreme caution the output directory will be overwritten!**
+
+## Example
+Example cataloging the `image_dir` images with a radius of 2 KM, images are pushed to `output_dir`. Lastly command will overwritten `output_dir`. 
+```
+python main.py -r 2000 -I ../../image_dir/ -O ../../output_dir -f
 ```
