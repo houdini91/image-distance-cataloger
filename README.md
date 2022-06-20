@@ -5,7 +5,7 @@ date: June 20, 2021
 geometry: margin=2cm
 ---
 
-📷 # Image distance cataloger 📷
+# 📷 Image distance cataloger 📷
 Python CLI tool allows you to organize images by there geotagging.
 Tool supports a configurable distance radius to catalog groups by.
 
